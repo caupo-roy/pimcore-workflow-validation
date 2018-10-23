@@ -32,7 +32,7 @@ class WorkflowListener implements EventSubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            WorkflowEvents::PRE_ACTION => 'onPreAction',
+            WorkflowEvents::PRE_GLOBAL_ACTION => 'onPreAction',
         ];
     }
 
